@@ -9,7 +9,7 @@
 class nBlock_GPO: public nBlockNode {
 public:
     nBlock_GPO(PinName pinOut);
-    void triggerInput(uint32_t inputNumber, uint32_t value);
+    void triggerInput(nBlocks_Message message);
 private:
     DigitalOut _out;
 };
